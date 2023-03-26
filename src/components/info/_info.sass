@@ -1,0 +1,42 @@
+.info
+	background-color: $brown
+	position: relative
+	z-index: 1
+
+	&:before
+		background-color: $light-blue
+		clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%)
+		content: ''
+		height: 3.5em
+		left: 0
+		position: absolute
+		top: 0
+		width: 100%
+
+	&__inner
+		margin: 0 auto
+		max-width: $desktoplg
+		padding: 6.5em 0 3em
+		position: relative
+
+	&__col
+		margin: 0 auto
+		max-width: 26em
+		padding: 0 15px
+		text-align: center
+		width: 100%
+
+	&__image
+		bottom: -66%
+		position: absolute
+		width: 70%
+
+		&--left
+			left: -30%
+
+		&--right
+			right: -30%
+
+		img
+			height: auto
+			width: 100%

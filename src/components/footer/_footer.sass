@@ -1,0 +1,51 @@
+.footer
+	background-color: $brown
+	box-shadow: 0 0 1em 0 rgba(0,0,0,0.4)
+	padding: 2em 0
+	position: relative
+	z-index: 2
+
+	&__col
+		max-width: 26em
+		margin: 0 auto
+		padding: 0 15px
+		text-align: center
+		width: 100%
+
+	&__icons
+		align-items: center
+		display: flex
+		flex-wrap: wrap
+		gap: 1.5em 0
+		justify-content: center
+		margin-bottom: 1.5em
+
+		@media only screen and (min-width: $tablet)
+			gap: 1em 3em
+
+	&__logo
+		@media only screen and (max-width: $maxTablet)
+			width: 100%
+
+		@media only screen and (min-width: $tablet)
+			order: 1
+
+	&__social
+		@media only screen and (max-width: $maxTablet)
+			width: calc(30% - 1.5em)
+
+		&:nth-child(2)
+			@media only screen and (min-width: $tablet)
+				order: 0
+
+		&:nth-child(3)
+			@media only screen and (min-width: $tablet)
+				order: 2
+
+		a
+			path
+				transition: fill 0.3s
+
+			&:hover
+				path
+					fill: $light-brown

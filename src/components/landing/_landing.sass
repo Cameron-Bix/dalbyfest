@@ -1,0 +1,24 @@
+.landing
+	background-color: $light-blue
+
+	&__col
+		align-items: center
+		display: flex
+		height: 15em
+		justify-content: center
+		padding-top: 1em
+
+		@media only screen and (min-width: $mobile)
+			align-items: flex-end
+
+		@media only screen and (min-width: $mobile) and (max-width: $maxDesktop)
+			height: 20em
+
+		@media only screen and (min-width: $desktop)
+			height: 25em
+			padding-bottom: 2em
+
+		svg
+			height: auto
+			max-width: 60vw
+			width: 22em
