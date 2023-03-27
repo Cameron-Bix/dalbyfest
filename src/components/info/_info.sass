@@ -15,7 +15,6 @@
 
 	&__inner
 		margin: 0 auto
-		max-width: $desktoplg
 		padding: 6.5em 0 3em
 		position: relative
 
@@ -26,17 +25,29 @@
 		text-align: center
 		width: 100%
 
+		@media only screen and (max-width: $maxTablet)
+			padding-bottom: 35%
+
 	&__image
-		bottom: -66%
+		bottom: 0
+		max-width: 50em
 		position: absolute
-		width: 70%
+		width: 45%
 
-		&--left
-			left: -30%
+		@media only screen and (min-width: $tablet)
+			width: calc(50% - 15em)
 
-		&--right
-			right: -30%
+		&--left.info__image
+			left: 0
+			rotate: 10deg
+			translate: -6em 6em
+
+		&--right.info__image
+			right: 0
+			rotate: -10deg
+			translate: 10em 10em
 
 		img
+			display: block
 			height: auto
 			width: 100%

@@ -31,7 +31,8 @@
   },
   "dependencies": {
     "basiclightbox": "^5.0.4",
-    "xml2js": "^0.4.23",
-    "timers": "^0.1.1"
+    "gsap": "^3.11.5",
+    "timers": "^0.1.1",
+    "xml2js": "^0.4.23"
   }
 }

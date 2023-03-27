@@ -1,18 +1,18 @@
 <footer class="footer">
 	<div class="footer__container">
 		<div class="footer__inner">
-			<div class="footer__col">
+			<div class="footer__col animate-in up" data-delay="0.2">
 				<div class="footer__icons">
 					<div class="footer__logo">
 						<?php include('assets/footer-logo.svg') ?>
 					</div>
 					<div class="footer__social">
-						<a href="#" target="_blank" aria-label="Instagram">
+						<a href="https://www.instagram.com/edalbs/?hl=en" target="_blank" aria-label="Instagram">
 							<?php include('assets/insta.svg') ?>
 						</a>
 					</div>
 					<div class="footer__social">
-						<a href="#" target="_blank" aria-label="TikTok">
+						<a href="https://www.tiktok.com/@elizabethdalby" target="_blank" aria-label="TikTok">
 							<?php include('assets/tiktok.svg') ?>
 						</a>
 					</div>
