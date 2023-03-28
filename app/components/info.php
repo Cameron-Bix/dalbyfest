@@ -12,7 +12,7 @@
 				<img src="assets/fan-left.png">
 			</div>
 			<div class="info__image info__image--right animate-in right" data-delay="1.2">
-				<img src="assets/fan-right.png">
+				<img src="assets/fan-left.png">
 			</div>
 		</div>
 	</div>
