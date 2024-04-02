@@ -1,0 +1,225 @@
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/_index.sass ***!
+  \**********************************************************************************************************/
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #FFF;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+h2 {
+  font-family: "Lobster", cursive;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #FFF;
+  margin-top: 0;
+}
+@media only screen and (min-width: 900px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+
+p {
+  font-family: "Archivo", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #FFF;
+  margin-top: 0;
+  line-height: 140%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #AF3100;
+  margin: 0;
+}
+
+main {
+  overflow: hidden;
+  position: relative;
+}
+
+.animate-in {
+  opacity: 0;
+}
+.animate-in.up {
+  translate: 0 2em;
+}
+.animate-in.down {
+  translate: 0 -2em;
+}
+.animate-in.left {
+  translate: -2em 2em;
+}
+.animate-in.right {
+  translate: 2em 2em;
+}
+
+.landing {
+  background-color: #CEF7FF;
+}
+.landing__col {
+  align-items: center;
+  display: flex;
+  height: 15em;
+  justify-content: center;
+  padding-top: 1em;
+}
+@media only screen and (min-width: 490px) {
+  .landing__col {
+    align-items: flex-end;
+  }
+}
+@media only screen and (min-width: 490px) and (max-width: 1199px) {
+  .landing__col {
+    height: 20em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .landing__col {
+    height: 25em;
+    padding-bottom: 2em;
+  }
+}
+.landing__col img {
+  height: auto;
+  max-width: 60vw;
+  width: 22em;
+}
+
+.info {
+  background-color: #AF3100;
+  position: relative;
+  z-index: 1;
+}
+.info:before {
+  background-color: #CEF7FF;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+  content: "";
+  height: 3.5em;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.info__inner {
+  margin: 0 auto;
+  padding: 6.5em 0 3em;
+  position: relative;
+}
+.info__col {
+  margin: 0 auto;
+  max-width: 26em;
+  padding: 0 15px;
+  text-align: center;
+  width: 100%;
+}
+@media only screen and (max-width: 899px) {
+  .info__col {
+    padding-bottom: 35%;
+  }
+}
+.info__image {
+  bottom: 0;
+  max-width: 50em;
+  position: absolute;
+  width: 45%;
+}
+@media only screen and (min-width: 900px) {
+  .info__image {
+    width: calc(50% - 15em);
+  }
+}
+.info__image--left.info__image {
+  left: 0;
+  rotate: 10deg;
+  translate: -6em 6em;
+}
+.info__image--right.info__image {
+  right: 0;
+  rotate: -10deg;
+  translate: 6em 6em;
+}
+.info__image--right.info__image img {
+  transform: scaleX(-1);
+}
+.info__image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.footer {
+  background-color: #AF3100;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.4);
+  padding: 2em 0;
+  position: relative;
+  z-index: 2;
+}
+.footer__col {
+  max-width: 26em;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+  width: 100%;
+}
+.footer__col p {
+  font-size: 0.75em;
+  margin-bottom: 0;
+}
+.footer__icons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em 0;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+@media only screen and (min-width: 900px) {
+  .footer__icons {
+    gap: 1em 3em;
+  }
+}
+@media only screen and (max-width: 899px) {
+  .footer__logo {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .footer__logo {
+    order: 1;
+  }
+}
+@media only screen and (max-width: 899px) {
+  .footer__social {
+    width: calc(30% - 1.5em);
+  }
+}
+@media only screen and (min-width: 900px) {
+  .footer__social:nth-child(2) {
+    order: 0;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .footer__social:nth-child(3) {
+    order: 2;
+  }
+}
+.footer__social a path {
+  transition: fill 0.3s;
+}
+.footer__social a:hover path {
+  fill: #FF902C;
+}
